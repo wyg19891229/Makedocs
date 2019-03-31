@@ -1,7 +1,0 @@
-site_name: Test
-nav:
-    - Home: index.md
-    - Change Log: Update Procedure.md
-theme: 
-  name: 'material'
-
