@@ -1,7 +1,10 @@
 site_name: Test
 nav:
     - Home: README.md
-    - Test: test.md
+    - Authentication and Authorization: Authentication and Authorization.md
 theme: 
   name: 'material'
+  palette:
+    primary: 'Light Blue'
+    accent: 'Light Blue'
 
