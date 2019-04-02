@@ -8,3 +8,7 @@ theme:
     primary: 'Light Blue'
     accent: 'Light Blue'
 
+# Google Analytics
+google_analytics:
+  - 'UA-137548591-1'
+  - 'auto'
