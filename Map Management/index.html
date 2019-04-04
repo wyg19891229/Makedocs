@@ -658,16 +658,15 @@ except Exception as e:
 
 <pre><code>{'statusCode': 790200, 'statusDescription': 'Success.'}
 </code></pre>
-<p>??? note "cURL from Postman"</p>
-<pre><code>```python
-curl -X DELETE \
+<p>cURL from Postman</p>
+<pre><code class="python">curl -X DELETE \
   'http://192.168.28.79/ServicesAPI/API/V1/CMDB/Maps?url=http://192.168.28.79/map.html?t=fb24f3f0-81a7-1929-4b8f-99106c23fa5b&amp;d=0201adc4-ae96-46f0-ae3d-01cdba9e41d6&amp;id=7f713c38-10fa-295a-3721-35d1b6d9fa5b' \
   -H 'Postman-Token: 9bf74a3f-96df-4b5c-a399-238f3a2b8c3c' \
   -H 'cache-control: no-cache' \
   -H 'token: b56ed962-8ccd-4b2d-a7c1-7d97fff51321'
-```
 </code></pre>
-<p>"Error Examples"</p>
+
+<p>Error Examples</p>
 <pre><code class="python">###################################################################################################################    
 
 &quot;&quot;&quot;Error 1: empty inputs&quot;&quot;&quot;
