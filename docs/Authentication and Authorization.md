@@ -3,7 +3,7 @@
 ## ***GET*** /V1/CMDB/Domains/{?tenantId}
 Use this function returns a list of accessible domains in a specific tenant. The returned accessible domains vary by the user privileges you use to log in. To retrieve a full list of domains in a specified tenant, you must log in with system admin or tenant admin permissions. 
 
-### Detail Information
+###Detail Information
 
 > **Title** : Get all accessible domains of a tenants API<br>
 
@@ -17,17 +17,17 @@ Use this function returns a list of accessible domains in a specific tenant. The
 |------|------|------|
 |Bearer Authentication| Parameters | Authentication token | 
 
- ### Request body(****required***)
+###Request body(****required***)
 
 >No request body.
 
- ### Query Parameters(****required***)
+###Query Parameters(****required***)
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
 | tenantId* | string  | Unique identifier for the tenant from which you desire to retrieve the domain information. tenantId can be retrieved from get all accessible tenants.<br> **Note:** If user don't have the privilege to visit all tenants, specific tenantId is required for this API. |
 
- ### Headers
+###Headers
 
 > **Data Format Headers**
 
@@ -42,7 +42,7 @@ Use this function returns a list of accessible domains in a specific tenant. The
 |------|------|------|
 | token* | string  | Authentication token, get from login API. |
 
- ### Response
+###Response
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
@@ -73,7 +73,7 @@ Use this function returns a list of accessible domains in a specific tenant. The
 }
 ```
 
- ### Full Example : 
+###Full Example 
 
 
 ```python
@@ -113,7 +113,7 @@ except Exception as e: print (str(e))
     {'domains': [{'domainId': '850ff5e9-c639-404d-85a3-d920dbee509c', 'domainName': 'Support and Service'}, {'domainId': '0201adc4-ae96-46f0-ae3d-01cdba9e41d6', 'domainName': 'GE Test'}], 'statusCode': 790200, 'statusDescription': 'Success.'}
     
 
-### cURL Code from Postman
+cURL Code from Postman
 
 
 ```python
@@ -123,7 +123,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
-### Error Examples
+Error Examples
 
 
 ```python
@@ -221,7 +221,7 @@ This method returns a list of accessible tenants (including tenant ID and names)
 }
 ```
 
-### Full Example : 
+### Full Example  
 
 
 ```python
@@ -264,7 +264,7 @@ except Exception as e: return (str(e))
 
 
 
-### cURL Code from Postman
+cURL Code from Postman
 
 
 ```python
@@ -274,7 +274,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
-### Error Example : 
+Error Example : 
 
 
 ```python
@@ -377,7 +377,6 @@ body = {
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|<img width=100/>|<img width=100/>|<img width=500/>|
 | Content-Type | string  | support "application/json" |
 | Accept | string  | support "application/json" |
 
@@ -386,7 +385,6 @@ body = {
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|<img width=100/>|<img width=100/>|<img width=500/>|
 |token | string | The returned authentication token.  |
 |statusCode| integer | The returned status code of executing the API.  |
 |statusDescription| string | The explanation of the status code. |
@@ -402,7 +400,7 @@ body = {
 }
 ```
 
-### Full Example : 
+### Full Example 
 
 
 ```python
@@ -442,7 +440,7 @@ except Exception as e:
     {'token': '9b9715e8-7274-4a28-9692-e00ad315a283', 'statusCode': 790200, 'statusDescription': 'Success.'}
     
 
-> ### Example For External user
+Example For External user
 
 
 ```python
@@ -475,7 +473,7 @@ except Exception as e:
     {'token': '5e9af6f4-efa8-4a19-9d42-add069c67c99', 'statusCode': 790200, 'statusDescription': 'Success.'}
     
 
-### cURL Code from Postman
+cURL Code from Postman
 
 
 ```python
@@ -491,7 +489,7 @@ curl -X POST \
     }'
 ```
 
-### Error Example : 
+Error Example : 
 
 
 ```python
@@ -655,7 +653,7 @@ Use this API to log out from the current session.
 }
 ```
 
-### Full Example : 
+### Full Example  
 
 
 ```python
@@ -695,7 +693,7 @@ except Exception as e:
     {'statusCode': 790200, 'statusDescription': 'Success.'}
     
 
-### cURL Code from Postman
+cURL Code from Postman
 
 
 ```python
@@ -706,7 +704,7 @@ curl -X DELETE \
   -H 'token: 7480e46f-6a25-470e-9c61-351f6b7d86fa'
 ```
 
-### Error Exampes
+Error Exampes
 
 
 ```python
@@ -786,7 +784,7 @@ Use this API to specify a domain to work on to get or set NetBrain data by assoc
 |tenantId* | string  | Unique identifier for the tenant from which you desire to retrieve the domain information. tenantId can be retrieved from get all accessible tenants.  |
 |domainId | string  | Input the ID of the target domain. Get a domain ID by using the API [Get all accessible domains of a tenant.](https://www.netbraintech.com/docs/ie71/help/get-all-accessible-domains-of-tenant.htm)<br> **Note**: This parameter is optioanl if the following operations aim only on tenant. |
 
-> ### ***Example***
+> ***Example***
 
 
 ```python
@@ -815,7 +813,7 @@ Use this API to specify a domain to work on to get or set NetBrain data by assoc
 |------|------|------|
 | token | string  | Authentication token, get from login API. |
 
- ### Response
+### Response
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
@@ -832,7 +830,7 @@ Use this API to specify a domain to work on to get or set NetBrain data by assoc
 }
 ```
 
-### Full Example :
+### Full Example 
 
 
 ```python
@@ -877,7 +875,7 @@ except Exception as e: print (str(e))
     {'statusCode': 790200, 'statusDescription': 'Success.'}
     
 
- # cURL Code from Postman
+cURL Code from Postman
 
 
 ```python
@@ -887,7 +885,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
- ## Error Examples:
+Error Examples:
 
 
 ```python

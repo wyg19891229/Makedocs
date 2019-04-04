@@ -1,4 +1,4 @@
-site_name: Test
+site_name: Netbrain REST API Documentation
 nav:
     - Home: README.md
     - Authentication and Authorization: Authentication and Authorization.md
@@ -8,7 +8,3 @@ theme:
     primary: 'Light Blue'
     accent: 'Light Blue'
 
-# Google Analytics
-google_analytics:
-  - 'UA-137548591-1'
-  - 'auto'
