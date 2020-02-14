@@ -1,9 +1,9 @@
-# Authentication and Authorization API
+# **Authentication and Authorization API**
 
 ## ***GET*** /V1/CMDB/Domains/{?tenantId}
 Use this function returns a list of accessible domains in a specific tenant. The returned accessible domains vary by the user privileges you use to log in. To retrieve a full list of domains in a specified tenant, you must log in with system admin or tenant admin permissions. 
 
-###Detail Information
+### Detail Information
 
 > **Title** : Get all accessible domains of a tenants API<br>
 
@@ -15,19 +15,19 @@ Use this function returns a list of accessible domains in a specific tenant. The
 
 |**Type**|**In**|**Name**|
 |------|------|------|
-|Bearer Authentication| Parameters | Authentication token | 
+|Bearer Authentication| Parameters | Authentication token |
 
-###Request body(****required***)
+### Request body(****required***)
 
 >No request body.
 
-###Query Parameters(****required***)
+### Query Parameters(****required***)
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
 | tenantId* | string  | Unique identifier for the tenant from which you desire to retrieve the domain information. tenantId can be retrieved from get all accessible tenants.<br> **Note:** If user don't have the privilege to visit all tenants, specific tenantId is required for this API. |
 
-###Headers
+### Headers
 
 > **Data Format Headers**
 
@@ -73,7 +73,7 @@ Use this function returns a list of accessible domains in a specific tenant. The
 }
 ```
 
-###Full Example 
+### Full Example 
 
 
 ```python
@@ -111,7 +111,7 @@ except Exception as e: print (str(e))
 ```
 
     {'domains': [{'domainId': '850ff5e9-c639-404d-85a3-d920dbee509c', 'domainName': 'Support and Service'}, {'domainId': '0201adc4-ae96-46f0-ae3d-01cdba9e41d6', 'domainName': 'GE Test'}], 'statusCode': 790200, 'statusDescription': 'Success.'}
-    
+
 
 cURL Code from Postman
 
@@ -169,7 +169,7 @@ This method returns a list of accessible tenants (including tenant ID and names)
 
 |**Type**|**In**|**Name**|
 |------|------|------|
-|Bearer Authentication| Parameters | Authentication token | 
+|Bearer Authentication| Parameters | Authentication token |
 
 ### Request body(****required***)
 
@@ -350,7 +350,6 @@ Response:
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|<img width=100/>|<img width=100/>|<img width=500/>|
 |username* | string  | the username to log into your NetBrain domain.  |
 |password* | string  | the password to log into your NetBrain domain.  |
 |authentication_id | string  | This body parameter is only required for an external user through SSO, LDAP/AD or TACACS and the value must same with the name of external authentication which the user created by admin role during system management under "User Account" section. |
@@ -388,7 +387,7 @@ body = {
 |token | string | The returned authentication token.  |
 |statusCode| integer | The returned status code of executing the API.  |
 |statusDescription| string | The explanation of the status code. |
- 
+
 > ***Example*** :
 
 
@@ -438,7 +437,7 @@ except Exception as e:
 ```
 
     {'token': '9b9715e8-7274-4a28-9692-e00ad315a283', 'statusCode': 790200, 'statusDescription': 'Success.'}
-    
+
 
 Example For External user
 
@@ -471,7 +470,7 @@ except Exception as e:
 ```
 
     {'token': '5e9af6f4-efa8-4a19-9d42-add069c67c99', 'statusCode': 790200, 'statusDescription': 'Success.'}
-    
+
 
 cURL Code from Postman
 
@@ -611,7 +610,7 @@ Use this API to log out from the current session.
 
 |**Type**|**In**|**Name**|
 |------|------|------|
-|Bearer Authentication| Headers | Authentication token | 
+|Bearer Authentication| Headers | Authentication token |
 
 ### Request body(****required***)
 
@@ -691,7 +690,7 @@ except Exception as e:
 ```
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
-    
+
 
 cURL Code from Postman
 
@@ -775,7 +774,7 @@ Use this API to specify a domain to work on to get or set NetBrain data by assoc
 
 |**Type**|**In**|**Name**|
 |------|------|------|
-|Bearer Authentication| Parameters | Authentication token | 
+|Bearer Authentication| Parameters | Authentication token |
 
 ### Request body(****required***)
 
@@ -873,7 +872,7 @@ except Exception as e: print (str(e))
 ```
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
-    
+
 
 cURL Code from Postman
 

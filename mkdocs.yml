@@ -2,9 +2,18 @@ site_name: Netbrain REST API Documentation
 nav:
     - Home: README.md
     - Authentication and Authorization: Authentication and Authorization.md
+    - Map Management: Map Management.md
+
 theme: 
   name: 'material'
   palette:
     primary: 'Light Blue'
     accent: 'Light Blue'
 
+markdown_extensions:
+  - footnotes
+  - admonition
+
+google_analytics:
+  - 'UA-137548591-1'
+  - 'auto'
