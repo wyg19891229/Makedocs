@@ -3,6 +3,7 @@ Netbrain provides all available REST APIs in this repository. We offer two secti
 
 - [Authentication and Authorization][1]
 - [Map Management][2]
+- [Benchmark Task Management][3]
 
 [1]: https://wyg19891229.github.io/Makedocs/Authentication%20and%20Authorization/
 [2]: https://wyg19891229.github.io/Makedocs/Map%20Management/
