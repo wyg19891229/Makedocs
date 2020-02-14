@@ -3,6 +3,7 @@ nav:
     - Home: README.md
     - Authentication and Authorization: Authentication and Authorization.md
     - Map Management: Map Management.md
+    - Benchmark Task Management: Benchmark Task Management.md
 
 theme: 
   name: 'material'
