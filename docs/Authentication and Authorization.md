@@ -52,7 +52,7 @@ Use this function returns a list of accessible domains in a specific tenant. The
 |statusCode| integer | Code issued by NetBrain server indicating the execution result.  |
 |statusDescription| string | The explanation of the status code. |
 
-> ***Example***
+> **Example**
 
 
 ```python
@@ -113,7 +113,7 @@ except Exception as e: print (str(e))
     {'domains': [{'domainId': '850ff5e9-c639-404d-85a3-d920dbee509c', 'domainName': 'Support and Service'}, {'domainId': '0201adc4-ae96-46f0-ae3d-01cdba9e41d6', 'domainName': 'GE Test'}], 'statusCode': 790200, 'statusDescription': 'Success.'}
 
 
-cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -123,7 +123,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
-Error Examples
+> **Error Examples**
 
 
 ```python
@@ -205,7 +205,7 @@ This method returns a list of accessible tenants (including tenant ID and names)
 |statusCode| integer | Code issued by NetBrain server indicating the execution result.  |
 |statusDescription| string | The explanation of the status code. |
 
-> ***Example*** :
+> **Example** :
 
 
 ```python
@@ -264,7 +264,7 @@ except Exception as e: return (str(e))
 
 
 
-cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -274,7 +274,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
-Error Example : 
+> **Error Example**
 
 
 ```python
@@ -354,7 +354,7 @@ Response:
 |password* | string  | the password to log into your NetBrain domain.  |
 |authentication_id | string  | This body parameter is only required for an external user through SSO, LDAP/AD or TACACS and the value must same with the name of external authentication which the user created by admin role during system management under "User Account" section. |
 
-> ***Example*** : 
+> **Example** : 
 
 
 ```python
@@ -472,7 +472,7 @@ except Exception as e:
     {'token': '5e9af6f4-efa8-4a19-9d42-add069c67c99', 'statusCode': 790200, 'statusDescription': 'Success.'}
 
 
-cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -488,7 +488,7 @@ curl -X POST \
     }'
 ```
 
-Error Example : 
+> **Error Example**
 
 
 ```python
@@ -692,7 +692,7 @@ except Exception as e:
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
 
-cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -703,7 +703,7 @@ curl -X DELETE \
   -H 'token: 7480e46f-6a25-470e-9c61-351f6b7d86fa'
 ```
 
-Error Exampes
+> **Error Exampes**
 
 
 ```python
@@ -874,7 +874,7 @@ except Exception as e: print (str(e))
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
 
-cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -884,7 +884,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
-Error Examples:
+> **Error Examples**
 
 
 ```python
