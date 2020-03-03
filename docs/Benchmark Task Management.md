@@ -22,7 +22,7 @@ The option for data to be retrieved in this task is 'Built-in Live Data' which t
 | --------------------- | ------- | -------------------- |
 | Bearer Authentication | Headers | Authentication token |
 
- ### Request body (***required**)
+### Request body (***required**)
 
 | **Name**                            | **Type**       | **Description**                                              |
 | ----------------------------------- | -------------- | ------------------------------------------------------------ |
