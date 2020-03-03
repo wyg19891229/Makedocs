@@ -1,0 +1,2525 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Change Management - Netbrain REST API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-137548591-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#change-management" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Netbrain REST API Documentation" aria-label="Netbrain REST API Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Netbrain REST API Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Change Management
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Netbrain REST API Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Netbrain REST API Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Authentication and Authorization/" title="Authentication and Authorization" class="md-nav__link">
+      Authentication and Authorization
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Benchmark Task Management/" title="Benchmark Task Management" class="md-nav__link">
+      Benchmark Task Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Change Management
+      </label>
+    
+    <a href="./" title="Change Management" class="md-nav__link md-nav__link--active">
+      Change Management
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post-v1cmbinding" class="md-nav__link">
+    POST /V1/CM/Binding
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-v1cmapprovalstate" class="md-nav__link">
+    POST /V1/CM/Approval/State
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_1" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_1" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_1" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_1" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    POST /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_2" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_2" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_2" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_2" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    DELETE /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_3" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required_1" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required_1" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_3" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_3" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_3" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    GET /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_4" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required_2" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required_2" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_4" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_4" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_4" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#put-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    PUT /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_5" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required_3" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required_3" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_5" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_5" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_5" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Map Management/" title="Map Management" class="md-nav__link">
+      Map Management
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post-v1cmbinding" class="md-nav__link">
+    POST /V1/CM/Binding
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-v1cmapprovalstate" class="md-nav__link">
+    POST /V1/CM/Approval/State
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_1" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_1" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_1" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_1" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    POST /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_2" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_2" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_2" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_2" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    DELETE /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_3" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required_1" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required_1" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_3" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_3" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_3" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    GET /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_4" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required_2" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required_2" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_4" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_4" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_4" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#put-v1cmdbcmtasksscheduledtask" class="md-nav__link">
+    PUT /V1/CMDB/CM/Tasks/ScheduledTask
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detail-information_5" class="md-nav__link">
+    Detail Information
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-body-required_3" class="md-nav__link">
+    Request body (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters-required_3" class="md-nav__link">
+    Query Parameters (*required)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers_5" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_5" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example_5" class="md-nav__link">
+    Full Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="change-management"><strong>Change Management</strong></h1>
+<h2 id="post-v1cmbinding"><strong>POST</strong> /V1/CM/Binding</h2>
+<p>This API call is used to binding another vendor's ticket with a change management runbook.</p>
+<h3 id="detail-information">Detail Information</h3>
+<blockquote>
+<p><strong>Title</strong> : Bind a change management runbook</p>
+<p><strong>Version</strong> : 06/26/2019.</p>
+<p><strong>API Server URL</strong> : http(s)://IP address of NetBrain Web API Server/ServicesAPI/API/V1/CM/Binding  </p>
+<p><strong>Authentication</strong> : </p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>In</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bearer Authentication</td>
+<td>Headers</td>
+<td>Authentication token</td>
+</tr>
+</tbody>
+</table>
+<p>### Request body (<strong>*required</strong>)</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>runbookId*</td>
+<td>string</td>
+<td>ID of the Change Management Runbook</td>
+</tr>
+<tr>
+<td>ticketId*</td>
+<td>string</td>
+<td>Other vendor's ticket number</td>
+</tr>
+<tr>
+<td>vendor*</td>
+<td>string</td>
+<td>Name of the vendor</td>
+</tr>
+<tr>
+<td>ticketName</td>
+<td>string</td>
+<td>Name of the ticket, for example: in ServiceNow CHG0030015 (means "number" in ServiceNow)</td>
+</tr>
+<tr>
+<td>ticketUrl</td>
+<td>string</td>
+<td>The full URL of the tichet, for example: in ServiceNow: https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example</em></strong></p>
+</blockquote>
+<pre><code class="python">body = {
+    'vendor': 'serviceNow',
+    'ticketId': &quot;00008&quot;,
+    'runbookId': '7652cb62-c5e6-d0a3-3f22-29972d03ad4c',
+    'ticketUrl': 'https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber'
+}
+</code></pre>
+
+<h3 id="headers">Headers</h3>
+<blockquote>
+<p><strong>Data Format Headers</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>string</td>
+<td>support "application/json"</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>string</td>
+<td>support "application/json"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Authorization Headers</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response">Response</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>statusCode</td>
+<td>integer</td>
+<td>Code issued by NetBrain server indicating the execution result.</td>
+</tr>
+<tr>
+<td>statusDescription</td>
+<td>string</td>
+<td>The explanation of the status code.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example</em></strong></p>
+</blockquote>
+<pre><code class="python">{
+  &quot;statusCode&quot;:0,
+  &quot;statusDescription&quot;:&quot;Success.&quot;,
+  &quot;runbookUrl&quot;:&quot;&quot;
+}
+</code></pre>
+
+<h3 id="full-example">Full Example</h3>
+<pre><code class="python"># import python modules 
+import requests
+import time
+import urllib3
+import pprint
+import json
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Set the request inputs
+token = &quot;5e372bc9-3b2e-48fc-b86b-e9c651968f85&quot;
+nb_url = &quot;http://192.168.28.173&quot;
+full_url = nb_url + &quot;/ServicesAPI/API/V1/CM/Binding&quot;
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
+headers[&quot;Token&quot;] = token
+
+body = {
+    'vendor': 'serviceNow',
+    'ticketId': &quot;00008&quot;,
+    'runbookId': '7652cb62-c5e6-d0a3-3f22-29972d03ad4c',
+    'ticketUrl': 'https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber'
+}
+
+try:
+    response = requests.post(full_url, data = json.dumps(body), headers = headers, verify = False)
+    if response.status_code == 200:
+        result = response.json()
+        print (result)
+    else:
+        print (&quot;Binding ticket failed! - &quot; + str(response.text))
+
+except Exception as e:
+    print (str(e)) 
+</code></pre>
+
+<pre><code>{ "statusCode":790200, "statusDescription":"Success.", "runbookUrl":"http://192.168.28.173/map.html?t=823e096b-093a-10f1-1471-21a9a5ff509c&amp;d=af4581fd-a705-4ddf-a878-fd4c6f304b96&amp;id=378d70a2-f3e1-76c1-42fa-2bb088c1bda2&amp;rba=9948608d-c755-d1e7-b5d1-325b917952b0"}
+</code></pre>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
+<pre><code class="python">curl -X POST \
+  http://192.168.28.79/ServicesAPI/API/V1/CM/Binding \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: f8ebb763-3a05-45d6-b4ff-1873f5e01b2d' \
+  -H 'cache-control: no-cache' \
+  -H 'token: 1c52cd65-3247-44ad-91e6-cd73fc6c64a6' \
+  -d '{
+    &quot;runbookId&quot;: &quot;e8f1ab35-b763-bb1b-f921-ac99683ae476&quot;,
+    &quot;ticketId&quot;: &quot;ticketId&quot;,
+    &quot;vendor&quot;: &quot;vendor&quot;,
+    &quot;ticketName&quot;: &quot;ticketName&quot;
+}'
+</code></pre>
+
+<h2 id="post-v1cmapprovalstate"><strong>POST</strong> /V1/CM/Approval/State</h2>
+<p>This API call is used to set CM Runbook approval state example - approve or reject.</p>
+<h3 id="detail-information_1">Detail Information</h3>
+<blockquote>
+<p><strong>Title</strong> : Approve a change management request</p>
+<p><strong>Version</strong> : 06/26/2019</p>
+<p><strong>API Server URL</strong> : http(s)://IP address of NetBrain Web API Server/ServicesAPI/API/V1/CM/Approval/State </p>
+<p><strong>Authentication</strong> :</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>In</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bearer Authentication</td>
+<td>Headers</td>
+<td>Authentication token</td>
+</tr>
+</tbody>
+</table>
+<p>### Request body (<strong>*required</strong>)</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>runbookId*</td>
+<td>string</td>
+<td>ID of the Change Management Runbook</td>
+</tr>
+<tr>
+<td>ticketId*</td>
+<td>string</td>
+<td>Other vendor's ticket number</td>
+</tr>
+<tr>
+<td>vendor*</td>
+<td>string</td>
+<td>Name of the vendor</td>
+</tr>
+<tr>
+<td>state*</td>
+<td>integer</td>
+<td>0(planning)/1(pending)/2(approved) /3(rejected) /5(archived)</td>
+</tr>
+<tr>
+<td>ticketName</td>
+<td>string</td>
+<td>Name of the ticket, for example: in ServiceNow CHG0030015 (means "number" in ServiceNow)</td>
+</tr>
+<tr>
+<td>ticketUrl</td>
+<td>string</td>
+<td>The full URL of the tichet, for example: in ServiceNow: https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example</em></strong></p>
+</blockquote>
+<pre><code class="python">body = {
+    'vendor': 'serviceNow',
+    'ticketId': &quot;00008&quot;,
+    'runbookId': '7652cb62-c5e6-d0a3-3f22-29972d03ad4c',
+    'ticketUrl': 'https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber',
+    'state': 2
+}
+</code></pre>
+
+<h3 id="headers_1">Headers</h3>
+<blockquote>
+<p><strong>Data Format Headers</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>string</td>
+<td>support "application/json"</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>string</td>
+<td>support "application/json"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Authorization Headers</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response_1">Response</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>statusCode</td>
+<td>integer</td>
+<td>Code issued by NetBrain server indicating the execution result.</td>
+</tr>
+<tr>
+<td>statusDescription</td>
+<td>string</td>
+<td>The explanation of the status code.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example</em></strong></p>
+</blockquote>
+<pre><code class="python">{
+    'statusCode': 790200,
+    'statusDescription': 'Success.'
+}
+</code></pre>
+
+<h3 id="full-example_1">Full Example</h3>
+<pre><code class="python"># import python modules 
+import requests
+import time
+import urllib3
+import pprint
+import json
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Set the request inputs
+token = &quot;5e372bc9-3b2e-48fc-b86b-e9c651968f85&quot;
+nb_url = &quot;http://192.168.28.173&quot;
+full_url = nb_url + &quot;/ServicesAPI/API/V1/CM/Approval/State&quot;
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
+headers[&quot;Token&quot;] = token
+
+body = {
+    'vendor': 'serviceNow',
+    'ticketId': &quot;00008&quot;,
+    'runbookId': '7652cb62-c5e6-d0a3-3f22-29972d03ad4c',
+    'ticketUrl': 'https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber',
+    'state': 2
+}
+
+try:
+    response = requests.post(full_url, data = json.dumps(body), headers = headers, verify = False)
+    if response.status_code == 200:
+        result = response.json()
+        print (result)
+    else:
+        print (&quot;Ticket change management failed! - &quot; + str(response.text))
+
+except Exception as e:
+    print (str(e)) 
+</code></pre>
+
+<pre><code>{"runbookUrl":"http://192.168.28.173/map.html?t=823e096b-093a-10f1-1471-21a9a5ff509c&amp;d=af4581fd-a705-4ddf-a878-fd4c6f304b96&amp;id=378d70a2-f3e1-76c1-42fa-2bb088c1bda2&amp;rba=9948608d-c755-d1e7-b5d1-325b917952b0","statusCode":790200,"statusDescription":"Success."}
+</code></pre>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
+<pre><code class="python">curl -X POST \
+  http://192.168.28.173/ServicesAPI/API/V1/CM/Approval/State \
+  -H 'Accept: */*' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: 192.168.28.173' \
+  -H 'Postman-Token: 6417cc52-66ee-44b7-9718-dad31ef898b7,1c24d1d5-441a-4a1f-870e-3127a913d67c' \
+  -H 'User-Agent: PostmanRuntime/7.13.0' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache' \
+  -H 'content-length: 389' \
+  -H 'token: 5e372bc9-3b2e-48fc-b86b-e9c651968f85' \
+  -d '{
+    &quot;vendor&quot;: &quot;serviceNow&quot;,
+    &quot;ticketId&quot;: &quot;00008&quot;,
+    &quot;runbookId&quot;: &quot;7652cb62-c5e6-d0a3-3f22-29972d03ad4c&quot;,
+    &quot;ticketUrl&quot;: &quot;https://dev65813.service-now.com/nav_to.do?uri=%2Fincident.do%3Fsys_id%3D1ecf1235dbe2330093890d53ca9619a2%26sysparm_record_target%3Dincident%26sysparm_record_row%3D1%26sysparm_record_rows%3D67%26sysparm_record_list%3DORDERBYDESCnumber&quot;,
+    &quot;state&quot;: 2
+}'
+</code></pre>
+
+<h2 id="post-v1cmdbcmtasksscheduledtask">POST /V1/CMDB/CM/Tasks/ScheduledTask</h2>
+<p>Call this API to create a Scheduled Task (ST) for an APPROVED Network Change
+(NC).</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>
+<p>Only 1 ST can be created on each NC. If there is an existing ST, create
+    request is not allowed.</p>
+</li>
+<li>
+<p>ST can only be added to APPROVED NC, so that ST is restricted to be created
+    on unapproved NC.</p>
+</li>
+<li>
+<p>APPROVED NC with executed ST doesn’t allow ST creation request.</p>
+</li>
+<li>
+<p>Follow NetBrain system user privileges</p>
+</li>
+</ul>
+<h3 id="detail-information_2">Detail Information</h3>
+<blockquote>
+<p>Title: Change Management Scheduled Task API</p>
+<p>Version: 09/30/2019</p>
+<p>API Server URL: http(s)://IP Address of NetBrain Web API
+Server/ServicesAPI/API/V1/CMDB/CM/Tasks/ScheduledTask</p>
+<p>Authentication:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>In</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bearer Authentication</td>
+<td>Headers</td>
+<td>Authentication token</td>
+</tr>
+<tr>
+<td>Token</td>
+<td>String</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="request-body-required">Request body (*required)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runbook_id*</td>
+<td>string</td>
+<td>NC runbook ID</td>
+</tr>
+<tr>
+<td>ticket_id*</td>
+<td>string</td>
+<td>3rd party ITSM ticket ID.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Note: use either runbook_id or ticket_id. If both are provided, runbook_id has higher priority.</td>
+</tr>
+<tr>
+<td>execution_time*</td>
+<td>date</td>
+<td>ST start time. (input time format must follow the UTC structure: 2020-01-17T20:06:00.000Z)</td>
+</tr>
+<tr>
+<td>do_not_execute_after*</td>
+<td>date</td>
+<td>ST end time. (input time format must follow the UTC structure: 2020-01-17T20:06:00.000Z)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="query-parameters-required">Query Parameters (*required)</h3>
+<blockquote>
+<p>No parameters required.</p>
+</blockquote>
+<h3 id="headers_2">Headers</h3>
+<blockquote>
+<p>Data Format Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Authorization Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token</td>
+<td>String</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response_2">Response</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scheduled_task_id</td>
+<td>String</td>
+<td>ID of the created scheduled task</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>Integer</td>
+<td>The returned status code of executing the API.</td>
+</tr>
+<tr>
+<td>statusDescription</td>
+<td>String</td>
+<td>The explanation of the status code.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note: Error Code clarification</em></strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Message</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>790200</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>795012</td>
+<td>License is expired.</td>
+</tr>
+<tr>
+<td>793001</td>
+<td>System framework level error.</td>
+</tr>
+<tr>
+<td>791000</td>
+<td>The runbook_id or ticket_id is required.</td>
+</tr>
+<tr>
+<td>791006</td>
+<td>The Change Management runbook is not found.</td>
+</tr>
+<tr>
+<td>798808</td>
+<td>Schedule can only be applied to approved Change Management runbook.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>Scheduled task of this Change Management runbook is existed.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>OperationFailed.</td>
+</tr>
+<tr>
+<td>793001</td>
+<td>InternalError.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Example</strong></p>
+</blockquote>
+<pre><code class="python">{
+    &quot;scheduled_task_id&quot; : &quot;d5c5bb3c-1aad-ae2c-a591-347ede7d71a9&quot;,
+    &quot;statusCode&quot; : 790200,
+    &quot;statusDescription&quot; : &quot;Success&quot;
+}
+</code></pre>
+
+<h3 id="full-example_2">Full Example</h3>
+<pre><code class="python"># import python modules 
+import requests
+import time
+import urllib3
+import pprint
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import json
+
+token = &quot;87ccc8aa-6550-41cd-a54b-ae11b521a837&quot; 
+full_url = &quot;http://192.168.28.139/ServicesAPI/API/V1/CM/Tasks/ScheduleTask&quot; 
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}  
+headers['token'] = token
+
+body = {
+    &quot;Runbook_id&quot;:&quot;453ac967-12ad-f8f1-5158-648500fa67fb&quot;,
+    &quot;ticket_id&quot;:&quot;562d351f1b5e44502fd68774cc4bcb51&quot;,
+    &quot;execution_time&quot;:&quot;2020-01-17T20:06:00.000Z&quot;,
+    &quot;do_not_execute_after&quot;:&quot;2020-01-17T21:06:00.000Z&quot;
+}
+
+try:
+    # Do the HTTP request
+    response = requests.post(full_url, headers=headers, data = json.dumps(body), verify=False)
+    # Check for HTTP codes other than 200
+    if response.status_code == 200:
+        # Decode the JSON response into a dictionary and use the data
+        js = response.json()
+        print (js)
+    else:
+        print (&quot;Create CM task failed! - &quot; + str(response.text))
+except Exception as e:
+    print (str(e))
+
+</code></pre>
+
+<pre><code>{'statusCode': 790200, 'statusDescription': 'Success.'}
+</code></pre>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
+<pre><code class="python">curl -X POST \
+  http://192.168.28.143/ServicesAPI/API/V1/CMDB/CM/Tasks/ScheduledTask \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 194' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: 192.168.28.143' \
+  -H 'Postman-Token: 1501a820-2ec7-4971-a668-9ee3d742da52,e47745d9-d9f3-408a-9c93-7d0429c7d293' \
+  -H 'User-Agent: PostmanRuntime/7.15.2' \
+  -H 'cache-control: no-cache' \
+  -H 'token: ce4a589c-99d9-4a0e-abb6-5a91d424fad6' \
+  -d '{
+    &quot;Runbook_id&quot;:&quot;d5c5bb3c-1aad-ae2c-a591-347ede7d71a9&quot;,
+    &quot;ticket_id&quot;:&quot;1d9e4d500fe32b4046ddc5ece1050e7e&quot;,
+    &quot;execution_time&quot;:&quot;2020/01/15&quot;,
+    &quot;do_not_execute_after&quot;:&quot;2020/01/16&quot;
+}
+'
+</code></pre>
+
+<h2 id="delete-v1cmdbcmtasksscheduledtask">DELETE /V1/CMDB/CM/Tasks/ScheduledTask</h2>
+<p>Call this API to delete a “Waiting” status Scheduled Task (ST) of an APPROVED
+Network Change (NC).</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>
+<p>ST on “Running” or “Executed” status cannot be deleted.</p>
+</li>
+<li>
+<p>Follow NetBrain system user privileges</p>
+</li>
+<li>
+<p>Stop a “Running” task?</p>
+</li>
+</ul>
+<h3 id="detail-information_3">Detail Information</h3>
+<blockquote>
+<p>Title: Change Management Scheduled Task API</p>
+<p>Version: 09/30/2019</p>
+<p>API Server URL: http(s)://IP Address of NetBrain Web API
+Server/ServicesAPI/API/V1/CM/Tasks/ScheduleTask</p>
+<p>Authentication:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>In</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bearer Authentication</td>
+<td>Headers</td>
+<td>Authentication token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="request-body-required_1">Request body (*required)</h3>
+<blockquote>
+<p>No body required.</p>
+</blockquote>
+<h3 id="query-parameters-required_1">Query Parameters (*required)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runbook_id*</td>
+<td>string</td>
+<td>NC runbook ID</td>
+</tr>
+<tr>
+<td>ticket_id*</td>
+<td>string</td>
+<td>3rd party ITSM ticket ID.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note:</em></strong> Runbook_id and ticket_id only one should be provided by customer.</p>
+</blockquote>
+<h3 id="headers_3">Headers</h3>
+<blockquote>
+<p>Data Format Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Authorization Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token</td>
+<td>String</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response_3">Response</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>statusCode</td>
+<td>Integer</td>
+<td>The returned status code of executing the API.</td>
+</tr>
+<tr>
+<td>statusDescription</td>
+<td>String</td>
+<td>The explanation of the status code.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note: Error Code clarification</em></strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Message</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>790200</td>
+<td>Call running successfully.</td>
+</tr>
+<tr>
+<td>791000</td>
+<td>runbook id or ticket id required.</td>
+</tr>
+<tr>
+<td>791006</td>
+<td>The Change Management runbook is not found.</td>
+</tr>
+<tr>
+<td>798808</td>
+<td>Schedule can only be applied to approved Change Management runbook.</td>
+</tr>
+<tr>
+<td>798808</td>
+<td>Task Schedule is running now.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>Failed to delete.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>The scheduled task is running.</td>
+</tr>
+<tr>
+<td>793001</td>
+<td>System Exception Message.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example</em></strong></p>
+</blockquote>
+<pre><code class="python">{  
+    &quot;statusCode&quot; : &quot;790200&quot;,
+    &quot;statusDescription&quot; : &quot;Success&quot;
+}
+</code></pre>
+
+<h3 id="full-example_3">Full Example</h3>
+<pre><code class="python"># import python modules 
+import requests
+import time
+import urllib3
+import pprint
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import json
+
+token = &quot;87ccc8aa-6550-41cd-a54b-ae11b521a837&quot; 
+
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}  
+headers['token'] = token
+runbook_id = &quot;453ac967-12ad-f8f1-5158-648500fa67fb&quot;
+full_url = &quot;http://192.168.28.139/ServicesAPI/API/V1/CM/Tasks/ScheduleTask/&quot;
+param = {
+    &quot;runbook_Id&quot;:runbook_id
+}
+
+try:
+    # Do the HTTP request
+    response = requests.delete(full_url, headers=headers, params = param, verify=False)
+    # Check for HTTP codes other than 200
+    if response.status_code == 200:
+        # Decode the JSON response into a dictionary and use the data
+        js = response.json()
+        print (js)
+    else:
+        print (&quot;Delete CM task failed! - &quot; + str(response.text))
+except Exception as e:
+    print (str(e))
+</code></pre>
+
+<pre><code>{'statusCode': 790200, 'statusDescription': 'Success.'}
+</code></pre>
+<blockquote>
+<p><strong>cURL Code Postman</strong></p>
+</blockquote>
+<pre><code class="python">curl -X DELETE \
+  'http://192.168.28.139/ServicesAPI/API/V1/CM/Tasks/ScheduleTask?runbook_Id=453ac967-12ad-f8f1-5158-648500fa67fb' \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: ' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: 192.168.28.139' \
+  -H 'Postman-Token: 97f4fb3c-aeda-4a85-b8ea-5fe90b5efea8,1c24702f-17a2-4b07-a46c-9fc999ff536a' \
+  -H 'User-Agent: PostmanRuntime/7.15.2' \
+  -H 'cache-control: no-cache' \
+  -H 'token: 87ccc8aa-6550-41cd-a54b-ae11b521a837'
+</code></pre>
+
+<h2 id="get-v1cmdbcmtasksscheduledtask">GET /V1/CMDB/CM/Tasks/ScheduledTask</h2>
+<p>Call this API to get a Scheduled Task (ST) of an APPROVED Network Change (NC).</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>
+<p>ST can only be added to APPROVED NC, so that unapproved NC doesn’t have an
+    ST. Return NC status and error message in response.</p>
+</li>
+<li>
+<p>Follow NetBrain system user privileges</p>
+</li>
+</ul>
+<h3 id="detail-information_4">Detail Information</h3>
+<blockquote>
+<p>Title: Change Management Scheduled Task API</p>
+<p>Version: 09/30/2019</p>
+<p>API Server URL: http(s)://IP Address of NetBrain Web API
+Server/ServicesAPI/API/V1/CMDB/CM/Tasks/ScheduledTask/</p>
+<p>Authentication:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>In</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bearer Authentication</td>
+<td>Headers</td>
+<td>Authentication token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="request-body-required_2">Request body (*required)</h3>
+<blockquote>
+<p>No body required.</p>
+</blockquote>
+<h3 id="query-parameters-required_2">Query Parameters (*required)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runbook_id*</td>
+<td>string</td>
+<td>NC runbook ID</td>
+</tr>
+<tr>
+<td>ticket_id*</td>
+<td>string</td>
+<td>3rd party ITSM ticket ID.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note:</em></strong> Runbook_id and ticket_id only one should be provided by customer.</p>
+</blockquote>
+<h3 id="headers_4">Headers</h3>
+<blockquote>
+<p>Data Format Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Authorization Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token</td>
+<td>String</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response_4">Response</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>runbook_id</td>
+<td>String</td>
+<td>NC runbook ID</td>
+</tr>
+<tr>
+<td>scheduled_task_id</td>
+<td>String</td>
+<td>ID of the created scheduled task</td>
+</tr>
+<tr>
+<td>scheduler</td>
+<td>String</td>
+<td>User name of the scheduler</td>
+</tr>
+<tr>
+<td>scheduled_task_status</td>
+<td>String</td>
+<td>Status of the created scheduled task</td>
+</tr>
+<tr>
+<td>execution_time</td>
+<td>date</td>
+<td>ST start time</td>
+</tr>
+<tr>
+<td>do_not_execute_after</td>
+<td>date</td>
+<td>ST end time</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Status of scheduled task</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>Integer</td>
+<td>The returned status code of executing the API.</td>
+</tr>
+<tr>
+<td>statusDescription</td>
+<td>String</td>
+<td>The explanation of the status code.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note: Error Code clarification</em></strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Message</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>790200</td>
+<td>Success.</td>
+</tr>
+<tr>
+<td>791000</td>
+<td>The runbook_id or ticket_id is required.</td>
+</tr>
+<tr>
+<td>791006</td>
+<td>The Change Management runbook is not found.</td>
+</tr>
+<tr>
+<td>798808</td>
+<td>Schedule can only be applied to approved Change Management runbook.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>Task Schedule can not be found.</td>
+</tr>
+<tr>
+<td>793001</td>
+<td>System Exception Message.</td>
+</tr>
+<tr>
+<td>793001</td>
+<td>You're not privileged to get the Network Change.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example</em></strong></p>
+</blockquote>
+<pre><code class="python">{
+    &quot;runbook_id&quot; : &quot;d5c5bb3c-1aad-ae2c-a591-347ede7d71a9&quot;,
+    &quot;scheduled_task_id&quot; : &quot;de7d71a9-1aad-ae2c-a591-347ed5c5bb3c&quot;,
+    &quot;scheduler&quot; : &quot;netbrain&quot;,
+    &quot;scheduled_task_status&quot; : &quot;pending&quot;,
+    &quot;execution_time&quot; : &quot;2020/01/15&quot;,
+    &quot;do_not_execute_after&quot; : &quot;2020/01/16&quot;,
+    &quot;status&quot; : &quot;pending&quot;
+    &quot;statusCode&quot; : &quot;790200&quot;,
+    &quot;statusDescription&quot; : &quot;Success&quot;
+}
+</code></pre>
+
+<h3 id="full-example_4">Full Example</h3>
+<pre><code class="python"># import python modules 
+import requests
+import time
+import urllib3
+import pprint
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import json
+
+token = &quot;87ccc8aa-6550-41cd-a54b-ae11b521a837&quot; 
+
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}  
+headers['token'] = token
+runbook_id = &quot;453ac967-12ad-f8f1-5158-648500fa67fb&quot;
+full_url = &quot;http://192.168.28.139/ServicesAPI/API/V1/CM/Tasks/ScheduleTask/&quot;
+param = {
+    &quot;runbook_Id&quot;:runbook_id
+}
+
+try:
+    # Do the HTTP request
+    response = requests.get(full_url, headers=headers, params = param, verify=False)
+    # Check for HTTP codes other than 200
+    if response.status_code == 200:
+        # Decode the JSON response into a dictionary and use the data
+        js = response.json()
+        print (js)
+    else:
+        print (&quot;Get CM task failed! - &quot; + str(response.text))
+except Exception as e:
+    print (str(e))
+
+</code></pre>
+
+<pre><code>{'runbook_id': '453ac967-12ad-f8f1-5158-648500fa67fb', 'scheduled_task_id': 'c0777853-ec19-488e-b207-43c221d1a93e', 'scheduler': 'gongdai.liu', 'execution_time': '2020-01-17T20:06:00Z', 'do_not_execute_after': '2020-01-17T21:06:00Z', 'status': 'waiting', 'statusCode': 790200, 'statusDescription': 'Success.'}
+</code></pre>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
+<pre><code class="python">curl -X GET \
+  http://192.168.28.139/ServicesAPI/API/V1/CMDB/CM/Tasks/ScheduledTask/453ac967-12ad-f8f1-5158-648500fa67fb \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: 192.168.28.139' \
+  -H 'Postman-Token: ef87ecaa-beee-44f1-911f-030031433bc6,0da2ebe3-e67c-474c-8e6c-f4f49fa51678' \
+  -H 'User-Agent: PostmanRuntime/7.15.2' \
+  -H 'cache-control: no-cache' \
+  -H 'token: 87ccc8aa-6550-41cd-a54b-ae11b521a837'
+</code></pre>
+
+<h2 id="put-v1cmdbcmtasksscheduledtask">PUT /V1/CMDB/CM/Tasks/ScheduledTask</h2>
+<p>Call this API to update a Scheduled Task (ST) of an APPROVED Network Change
+(NC).</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>
+<p>Use PUT method to update an ST that is on “Waiting” status.</p>
+</li>
+<li>
+<p>If an ST is on “Running” or “Executed” status, update request is not
+    allowed.</p>
+</li>
+<li>
+<p>Follow NetBrain system user privileges</p>
+</li>
+</ul>
+<h3 id="detail-information_5">Detail Information</h3>
+<blockquote>
+<p>Title: Change Management Scheduled Task API</p>
+<p>Version: 09/30/2019</p>
+<p>API Server URL: http(s)://IP Address of NetBrain Web API
+Server/ServicesAPI/API/V1/CMDB/CM/Tasks/ScheduledTask/\&lt;runbook_id/ticket_id></p>
+<p>Authentication:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>In</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bearer Authentication</td>
+<td>Headers</td>
+<td>Authentication token</td>
+</tr>
+</tbody>
+</table>
+<h3 id="request-body-required_3">Request body (*required)</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runbook_id*</td>
+<td>string</td>
+<td>NC runbook ID</td>
+</tr>
+<tr>
+<td>ticket_id*</td>
+<td>string</td>
+<td>3rd party ITSM ticket ID.</td>
+</tr>
+<tr>
+<td>execution_time*</td>
+<td>date</td>
+<td>ST start time</td>
+</tr>
+<tr>
+<td>do_not_execute_after*</td>
+<td>date</td>
+<td>ST end time</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note:</em></strong> Runbook_id and ticket_id only one should be provided by customer.</p>
+</blockquote>
+<h3 id="query-parameters-required_3">Query Parameters (*required)</h3>
+<blockquote>
+<p>No parameters required.</p>
+</blockquote>
+<h3 id="headers_5">Headers</h3>
+<blockquote>
+<p>Data Format Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>String</td>
+<td>Support “application/json”</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Authorization Headers</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token</td>
+<td>String</td>
+<td>Authentication token, get from login API.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response_5">Response</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>runbook_id</td>
+<td>String</td>
+<td>NC runbook ID</td>
+</tr>
+<tr>
+<td>scheduler</td>
+<td>String</td>
+<td>User name of the scheduler</td>
+</tr>
+<tr>
+<td>scheduled_task_status</td>
+<td>String</td>
+<td>Status of the created scheduled task</td>
+</tr>
+<tr>
+<td>execution_time</td>
+<td>date</td>
+<td>ST start time</td>
+</tr>
+<tr>
+<td>do_not_execute_after</td>
+<td>date</td>
+<td>ST end time</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Status of scheduled task</td>
+</tr>
+<tr>
+<td>statusCode</td>
+<td>Integer</td>
+<td>The returned status code of executing the API.</td>
+</tr>
+<tr>
+<td>statusDescription</td>
+<td>String</td>
+<td>The explanation of the status code.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Note: Error Code clarification</em></strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Message</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>790200</td>
+<td>Success.</td>
+</tr>
+<tr>
+<td>791000</td>
+<td>The runbook_id or ticket_id is required.</td>
+</tr>
+<tr>
+<td>791006</td>
+<td>The Change Management runbook is not found.</td>
+</tr>
+<tr>
+<td>798808</td>
+<td>Schedule can only be applied to approved Change Management runbook.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>Failed to update schedule.</td>
+</tr>
+<tr>
+<td>794011</td>
+<td>Task Schedule can not be found.</td>
+</tr>
+<tr>
+<td>793001</td>
+<td>System Exception Message.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><em>Example:</em></strong></p>
+</blockquote>
+<pre><code class="python">{
+    &quot;runbook_id&quot; : &quot;d5c5bb3c-1aad-ae2c-a591-347ede7d71a9&quot;,
+    &quot;scheduler&quot; : &quot;netbrain&quot;,
+    &quot;scheduled_task_status&quot; : &quot;pending&quot;,
+    &quot;execution_time&quot; : &quot;2020/01/15&quot;,
+    &quot;do_not_execute_after&quot; : &quot;2020/01/16&quot;,
+    &quot;status&quot; : &quot;pending&quot;
+    &quot;statusCode&quot; : &quot;790200&quot;,
+    &quot;statusDescription&quot; : &quot;Success&quot;
+}
+</code></pre>
+
+<pre><code>  File "&lt;ipython-input-2-16544f92b52d&gt;", line 8
+    "statusCode" : "790200",
+                 ^
+SyntaxError: invalid syntax
+</code></pre>
+<h3 id="full-example_5">Full Example</h3>
+<pre><code class="python"># import python modules 
+import requests
+import time
+import urllib3
+import pprint
+#urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import json
+
+token = &quot;87ccc8aa-6550-41cd-a54b-ae11b521a837&quot; 
+full_url = &quot;http://192.168.28.139/ServicesAPI/API/V1/CM/Tasks/ScheduleTask&quot;
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}  
+headers['token'] = token
+
+body = {
+    &quot;Runbook_id&quot;:&quot;453ac967-12ad-f8f1-5158-648500fa67fb&quot;,
+#     &quot;ticket_id&quot;:&quot;562d351f1b5e44502fd68774cc4bcb51&quot;,
+    &quot;execution_time&quot;:&quot;2020-01-17T20:06:00.000Z&quot;,
+    &quot;do_not_execute_after&quot;:&quot;2020-01-17T21:06:00.000Z&quot;
+}
+
+try:
+    # Do the HTTP request
+    response = requests.put(full_url, headers=headers, data = json.dumps(body), verify=False)
+    # Check for HTTP codes other than 200
+    if response.status_code == 200:
+        # Decode the JSON response into a dictionary and use the data
+        js = response.json()
+        print (js)
+    else:
+        print (&quot;Update CM task failed! - &quot; + str(response.text))
+except Exception as e:
+    print (str(e))
+</code></pre>
+
+<pre><code>{'statusCode': 790200, 'statusDescription': 'Success.'}
+</code></pre>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
+<pre><code class="python">curl -X PUT \
+  http://192.168.28.139/ServicesAPI/API/V1/CMDB/CM/Tasks/ScheduledTask \
+  -H 'Accept: */*' \
+  -H 'Accept-Encoding: gzip, deflate' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Length: 141' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: 192.168.28.139' \
+  -H 'Postman-Token: 13924834-e736-4274-a598-d36728cc3fa5,29c8b926-d190-4f37-baf7-ff2ca4ca3639' \
+  -H 'User-Agent: PostmanRuntime/7.15.2' \
+  -H 'cache-control: no-cache' \
+  -H 'token: 87ccc8aa-6550-41cd-a54b-ae11b521a837' \
+  -d '{
+    &quot;Runbook_id&quot;:&quot;d5c5bb3c-1aad-ae2c-a591-347ede7d71a9&quot;,
+    &quot;execution_time&quot;:&quot;2020/01/15&quot;,
+    &quot;do_not_execute_after&quot;:&quot;2020/01/16&quot;
+}
+'
+</code></pre>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Benchmark Task Management/" title="Benchmark Task Management" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Benchmark Task Management
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Map Management/" title="Map Management" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Map Management
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
