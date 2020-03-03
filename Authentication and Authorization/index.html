@@ -992,7 +992,7 @@
 </tbody>
 </table>
 <blockquote>
-<p><strong><em>Example</em></strong></p>
+<p><strong>Example</strong></p>
 </blockquote>
 <pre><code class="python">{
     'domains': [
@@ -1047,14 +1047,18 @@ except Exception as e: print (str(e))
 
 <pre><code>{'domains': [{'domainId': '850ff5e9-c639-404d-85a3-d920dbee509c', 'domainName': 'Support and Service'}, {'domainId': '0201adc4-ae96-46f0-ae3d-01cdba9e41d6', 'domainName': 'GE Test'}], 'statusCode': 790200, 'statusDescription': 'Success.'}
 </code></pre>
-<p>cURL Code from Postman</p>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
 <pre><code class="python">curl -X GET \
   'http://192.168.28.79/ServicesAPI/API/V1/CMDB/Domains?token=c00de805-9210-44a9-9a26-f0c1e944ea36&amp;tenantId=fb24f3f0-81a7-1929-4b8f-99106c23fa5b' \
   -H 'Postman-Token: ee6dda7c-cbcc-43b8-8957-9c4f2d2a4b5b' \
   -H 'cache-control: no-cache'
 </code></pre>
 
-<p>Error Examples</p>
+<blockquote>
+<p><strong>Error Examples</strong></p>
+</blockquote>
 <pre><code class="python">###################################################################################################################    
 
 &quot;&quot;&quot;Error 1: empty tenantId&quot;&quot;&quot;
@@ -1197,7 +1201,7 @@ Response:
 </tbody>
 </table>
 <blockquote>
-<p><strong><em>Example</em></strong> :</p>
+<p><strong>Example</strong> :</p>
 </blockquote>
 <pre><code class="python">{
     'tenants': [
@@ -1246,14 +1250,18 @@ except Exception as e: return (str(e))
  'statusCode': 790200,
  'statusDescription': 'Success.'}
 </code></pre>
-<p>cURL Code from Postman</p>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
 <pre><code class="python">curl -X GET \
   'http://192.168.28.79/ServicesAPI/API/V1/CMDB/Tenants?token=c00de805-9210-44a9-9a26-f0c1e944ea36' \
   -H 'Postman-Token: b3ecf2c4-d94a-4059-a01f-bcd21fc8a286' \
   -H 'cache-control: no-cache'
 </code></pre>
 
-<p>Error Example : </p>
+<blockquote>
+<p><strong>Error Example</strong></p>
+</blockquote>
 <pre><code class="python">###################################################################################################################    
 
 &quot;&quot;&quot;Error 1: empty url&quot;&quot;&quot;
@@ -1343,7 +1351,7 @@ Response:
 </tbody>
 </table>
 <blockquote>
-<p><strong><em>Example</em></strong> : </p>
+<p><strong>Example</strong> : </p>
 </blockquote>
 <pre><code class="python">body = {
           &quot;username&quot;: &quot;NetBrain&quot;,
@@ -1481,7 +1489,9 @@ except Exception as e:
 
 <pre><code>{'token': '5e9af6f4-efa8-4a19-9d42-add069c67c99', 'statusCode': 790200, 'statusDescription': 'Success.'}
 </code></pre>
-<p>cURL Code from Postman</p>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
 <pre><code class="python">curl -X POST \
   http://192.168.28.79/ServicesAPI/API/V1/Session \
   -H 'Accept: application/json' \
@@ -1494,7 +1504,9 @@ except Exception as e:
     }'
 </code></pre>
 
-<p>Error Example : </p>
+<blockquote>
+<p><strong>Error Example</strong></p>
+</blockquote>
 <pre><code class="python">###################################################################################################################    
 
 &quot;&quot;&quot;Error 1: empty url&quot;&quot;&quot;
@@ -1741,7 +1753,9 @@ except Exception as e:
 
 <pre><code>{'statusCode': 790200, 'statusDescription': 'Success.'}
 </code></pre>
-<p>cURL Code from Postman</p>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
 <pre><code class="python">curl -X DELETE \
   http://192.168.28.79/ServicesAPI/API/V1/Session \
   -H 'Postman-Token: d6de8cb3-ca3b-4bde-b9c7-be800e902d2c' \
@@ -1749,7 +1763,9 @@ except Exception as e:
   -H 'token: 7480e46f-6a25-470e-9c61-351f6b7d86fa'
 </code></pre>
 
-<p>Error Exampes</p>
+<blockquote>
+<p><strong>Error Exampes</strong></p>
+</blockquote>
 <pre><code class="python">###################################################################################################################    
 
 &quot;&quot;&quot;Error 1: empty url&quot;&quot;&quot;
@@ -1978,14 +1994,18 @@ except Exception as e: print (str(e))
 
 <pre><code>{'statusCode': 790200, 'statusDescription': 'Success.'}
 </code></pre>
-<p>cURL Code from Postman</p>
+<blockquote>
+<p><strong>cURL Code from Postman</strong></p>
+</blockquote>
 <pre><code class="python">curl -X GET \
   'http://192.168.28.79/ServicesAPI/API/V1/CMDB/Domains?token=c00de805-9210-44a9-9a26-f0c1e944ea36&amp;tenantId=fb24f3f0-81a7-1929-4b8f-99106c23fa5b' \
   -H 'Postman-Token: ee6dda7c-cbcc-43b8-8957-9c4f2d2a4b5b' \
   -H 'cache-control: no-cache'
 </code></pre>
 
-<p>Error Examples:</p>
+<blockquote>
+<p><strong>Error Examples</strong></p>
+</blockquote>
 <pre><code class="python">###################################################################################################################    
 
 &quot;&quot;&quot;Error 1: empty tenantId and domainId&quot;&quot;&quot;
