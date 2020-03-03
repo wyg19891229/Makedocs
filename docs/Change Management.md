@@ -18,7 +18,7 @@ This API call is used to binding another vendor's ticket with a change managemen
 | --------------------- | ------- | -------------------- |
 | Bearer Authentication | Headers | Authentication token |
 
- ### Request body (***required**)
+### Request body (***required**)
 
 | **Name**   | **Type** | **Description**                                              |
 | ---------- | -------- | ------------------------------------------------------------ |
@@ -147,8 +147,7 @@ This API call is used to set CM Runbook approval state example - approve or reje
 | --------------------- | ------- | -------------------- |
 | Bearer Authentication | Headers | Authentication token |
 
-
- ### Request body (***required**)
+### Request body (***required**)
 
 | **Name**   | **Type** | **Description**                                              |
 | ---------- | -------- | ------------------------------------------------------------ |
