@@ -45,7 +45,7 @@ The option for data to be retrieved in this task is 'Built-in Live Data' which t
 | isbuildDefaultDeviceDataView        | bool           | Determine whether to build default device data view. This field is optional and the default value is false. |
 | isEnable                            | bool           | Determine whether to enable the task. This field is optional and the default value is true. |
 
-> #### ***Example***
+> ***Example***
 
 
 ```python
