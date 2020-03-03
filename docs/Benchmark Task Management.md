@@ -153,7 +153,7 @@ except Exception as e:
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
-### cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -176,7 +176,7 @@ curl -X POST \
             }'
 ```
 
-### Error Examples
+> **Error Examples**
 
 
 ```python
@@ -478,7 +478,7 @@ except Exception as e:
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
-### cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -489,7 +489,7 @@ curl -X DELETE \
   -H 'cache-control: no-cache'
 ```
 
-### Error Examples
+> **Error Examples**
 
 
 ```python
@@ -678,7 +678,7 @@ except Exception as e:
 
     {'runs': [{'runId': 'f99c21ba-6f92-4958-9964-37597ec65b69', 'startTime': '2019-01-25T14:04:30Z', 'endTime': '2019-01-25T14:04:42Z', 'status': 10, 'isFinished': True}, {'runId': '7a43e9fc-a7e2-4cb2-8b33-6412c2ab551d', 'startTime': '2019-01-25T14:07:03Z', 'endTime': '2019-01-25T14:07:16Z', 'status': 10, 'isFinished': True}, {'runId': 'c34a2b3b-c0b6-465f-8008-f7a16c757202', 'startTime': '2019-01-25T14:07:38Z', 'endTime': '2019-01-25T14:07:51Z', 'status': 10, 'isFinished': True}, {'runId': '8dca23b8-89d7-427a-8007-72c87529cb16', 'startTime': '2019-01-25T14:08:06Z', 'endTime': '2019-01-25T14:08:18Z', 'status': 10, 'isFinished': True}, {'runId': 'edce37a6-093d-438a-836b-18114cb92785', 'startTime': '2019-01-25T14:12:55Z', 'endTime': '2019-01-25T14:13:08Z', 'status': 10, 'isFinished': True}, {'runId': '7e3843ac-8f07-45dc-8335-b1bbb163f8ef', 'startTime': '2019-01-25T14:13:17Z', 'endTime': '2019-01-25T14:13:29Z', 'status': 10, 'isFinished': True}, {'runId': '476cd7ea-bb26-43e0-a3a6-8fd1a6e70a58', 'startTime': '2019-01-25T17:58:20Z', 'endTime': '2019-01-25T17:58:32Z', 'status': 10, 'isFinished': True}], 'statusCode': 790200, 'statusDescription': 'Success.'}
 
-### cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -689,7 +689,7 @@ curl -X GET \
   -H 'token: e074d192-3f21-4ae8-b5f1-405d240b65ca'
 ```
 
-### Error Examples
+> **Error Examples**
 
 
 ```python
@@ -823,8 +823,7 @@ except Exception as e:
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
-
-### cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -835,7 +834,7 @@ curl -X POST \
   -H 'token: 35c83b3a-2c2c-4332-9d73-e21f2174904f'
 ```
 
-### Error Examples
+> **Error Examples**
 
 
 ```python
@@ -1073,8 +1072,7 @@ except Exception as e:
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
-
-### cURL Code from Postman
+> **cURL Code from Postman**
 
 
 ```python
@@ -1129,8 +1127,7 @@ except Exception as e:
 
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
-
-### Error Examples and Note
+> **Error Examples and Note**
 
 
 ```python
