@@ -2,8 +2,10 @@ site_name: Netbrain REST API Documentation
 nav:
     - Home: README.md
     - Authentication and Authorization: Authentication and Authorization.md
-    - Map Management: Map Management.md
     - Benchmark Task Management: Benchmark Task Management.md
+    - Change Management: Change Management.md
+    - Map Management: Map Management.md
+
 
 theme: 
   name: 'material'
