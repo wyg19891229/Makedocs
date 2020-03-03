@@ -51,7 +51,7 @@ Call this API to delete a map from system.
 |statusCode| integer | The returned status code of executing the API.  |
 |statusDescription| string | The explanation of the status code.  |
 
-> ***Example***
+> **Example**
 
 
 
@@ -102,7 +102,7 @@ except Exception as e:
     {'statusCode': 790200, 'statusDescription': 'Success.'}
 
 
-cURL from Postman
+> **cURL from Postman**
 
 ```python
 curl -X DELETE \
@@ -112,7 +112,7 @@ curl -X DELETE \
   -H 'token: b56ed962-8ccd-4b2d-a7c1-7d97fff51321'
 ```
 
-Error Examples
+> **Error Examples**
 
 
 ```python
@@ -221,7 +221,7 @@ Call this API to export a map.
 |statusCode| integer | The returned status code of executing the API.  |
 |statusDescription| string | The explanation of the status code.  |
 
-> ***Example***
+> **Example**
 
 
 ```python
@@ -287,7 +287,7 @@ curl -X GET \
   -H 'token: b56ed962-8ccd-4b2d-a7c1-7d97fff51321'
 ```
 
-Error Examples:
+> **Error Examples**
 
 
 ```python
